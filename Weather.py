@@ -47,7 +47,7 @@ class SearchWeather():
         finally:
             return details
 
-    def main(self,city='南京'):
+    def main(self,city):
         cityCode = self.getcityCode(city)
         detail = self.getWeather(cityCode,city) if cityCode else "亲，您输入的城市名称有误！"
         return detail
